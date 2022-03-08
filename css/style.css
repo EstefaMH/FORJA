@@ -1,0 +1,540 @@
+:root{
+    --red-color: #a40101;
+    --navalblue-color: #1d1b45;
+    --cyan-color: #2ca3ab;
+    --gray-color: #c4c4c4;
+    --orange-color:#f3610e;
+
+}
+
+*{
+    box-sizing: border-box;
+}
+
+#logo{
+    padding: 50px 20px 20px 20px;
+    display: flex;
+    justify-content: left;
+    align-content: baseline;
+    flex-direction: row;
+}
+ 
+h3{
+    color: white;
+    font-size: 18px;
+    size: 0vmax;
+}
+#user{
+    width:25px;
+    height: 25px;
+    background-position-x: right;
+    fill: white;
+}
+
+.boton{
+    width: max-content;/*SE AJUSTA LA CAJA AL TEXTO*/
+    height: max-content;
+    background-color: #2CA3AB;
+    border-radius: 15px;   
+    padding: 5px 5px 5px 5px;
+}
+
+/*HEADER*/
+
+header{
+    display: flex;
+    width: 100%;
+}
+
+.boton{
+    display: flex;
+    align-items: center;
+}
+
+.boton a{
+    text-decoration:none;
+    color: white;
+}
+
+.icons{
+    width: 24px;
+    height: 24px;
+    margin:5px;
+}
+
+#info{
+    width: 100%;
+
+}
+.linea img{
+    width: 100%;
+    height: 50%;
+}
+#arriba{
+    display: flex;
+    height: 50%;
+    justify-content: space-around ;
+    align-items: center;
+}
+
+#arriba .cont{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+/*BODY*/
+
+/*BANNER*/
+#banner {
+    display:flex;
+    width: 100%;
+    max-width: 100%;
+    min-height: 500px;
+    background-image: url("../img/2.\ medico.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: left;
+    align-items: center;
+
+}
+#banner h2{
+    color: var(--orange-color);
+    font-size: 40px;
+    margin:0;
+}
+#banner h1{
+    color: black;
+    font-size: 36px;
+    margin:0;
+    margin-bottom: 3px;
+}
+.banner-info{
+    margin-left: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+.franja{
+    display: flex;
+    width: 100%;
+    max-height: 100px;
+}
+/*CAJA 3 */
+.caja3{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    background-image: url("../img/4.\ covid.jpeg") ;
+    background-repeat: no-repeat;
+    background-size: cover ;
+    
+}
+#box-fondo{
+    background-color: rgba(250, 249, 249, 0.63);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.signos{
+    flex-basis: 50%;
+    text-align: justify;  
+    width: 50%;
+    padding: 35px;
+}
+li{
+    list-style-image:  url("../img/6.\ check.svg");
+}
+
+.icon{
+    width: 50px;
+    justify-content: flex-end;
+    float: left;
+    margin: 30px 15px auto 50px;
+}
+
+.caja3 .que_hacer{
+    align-content: flex-end;
+}
+
+#oms{
+    width: 100px;
+    height: auto;
+}
+
+.box-group{
+    background-color: var(--navalblue-color);
+    margin-bottom: 7px;
+}
+.caja4{
+    display: flex;
+    width: 100%;
+    background-color: var(--gray-color);
+    flex-direction: column;
+}
+.box-group p{
+     color: white;
+     font-weight: bold;
+     font-size: 15px;
+     padding-left: 10px;
+}
+
+/*FOOTER*/
+
+footer{
+    display: flex;
+    max-width: 100%;
+    height: 100px ;
+    background-color: black;
+    justify-content: center;
+}
+footer p{
+    color: white;
+    font-size: 12px;
+
+}
+
+
+/*------------------LOGIN--------------------*/
+#login {
+    display:flex ;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/10.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.volver-home{
+    align-self: flex-end;
+    margin : 5px;
+}
+.volver-home button{
+    background-color: var(--navalblue-color);
+    color: white;
+    border-radius: 5px;
+    border: 1px solid var(--cyan-color);
+    padding: 7px;
+}
+
+#login-container{
+    display: flex;
+    width: 30%;
+    height: 100%;
+    min-height: 400px ;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+#login-logo{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px ;
+    padding: 30px;
+    background-color: var(--cyan-color);
+    min-height: 100px;
+}
+#login-logo img{
+    width: 80%;
+    margin: 0;
+}
+
+#login-logo h3{
+    margin: 0;
+    color:#000000;
+}
+#login-form{
+    flex-basis: 80%;
+    padding: 10px;
+    background-color: white;
+    border-bottom-left-radius: 15px ;
+    border-bottom-right-radius: 15px ;
+}
+input.entrada{
+    margin-bottom: 8px;
+    width: 80%;
+    min-height: 30px ;
+    background-color: #bdfbff;
+    border-radius: 15px;
+    border: 1.5px solid #7fd2d8;
+}
+
+label{
+    font-weight: bolder;
+}
+
+
+a.linkpass{
+    color: #000000;
+    font-weight: 400;
+    margin: 5px;
+}
+
+.ingresar{
+    background-color: var(--orange-color);
+    color:white;
+    padding-top: 3px;
+    padding: 3px;
+    margin: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 5px;
+    border: 1.5px solid rgba(29, 122, 243, 0.753);
+}
+
+
+/*---------------------- REGISTRO PACIENTES ------------------*/
+.header-pacientes{
+    display: flex;
+    width: 100%;
+    background-color: rgb(36, 35, 35);
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+}
+.pacientes-btn{
+    display: flex;
+    width: 120px;
+    height: 50px;
+    margin-right: 50px;
+    justify-content: space-around;
+}
+.pacientes-btn button{
+    border-radius: 50%;
+    border:2px solid var(--cyan-color);
+    width: 50px;
+}
+
+
+#pacientes-registro{
+    display: flex;
+    width: 100%;
+    min-height: max-content;
+    background-color: #1d1b45;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+#num-doc{
+    height: 30px;
+    width: 220px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.input-doc{
+    border: 2px solid var(--cyan-color);
+    border-radius: 5px;
+    width: 200px;
+    padding: 7px;
+}
+
+#num-doc button{
+    border: 2px solid var(--cyan-color) ;
+    border-radius: 5px;
+}
+
+#pacientes-registro h1{
+    color: white;
+}
+
+#uno{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 150px;
+}
+
+#pacientes-form{
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+
+.formulario{
+    background-color: #c4c4c4;
+    border-radius: 15px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 3px;
+}
+
+.datos-container{
+    width: 50%;
+    display: flex ;
+    justify-content: left;
+    position: relative;
+    left: 10px;
+}
+
+.datos-uno{
+    border: 1px solid var(--cyan-color);
+    width: 100px;
+}
+
+.datos-paciente{
+    background-color: #e62727;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    
+}
+
+#pacientes-form input,select{
+    width: 45%;
+    margin:5px;
+    border: 1.5px solid var(--cyan-color);
+}
+
+.title-pac{
+    text-align: center;
+    color: #1d1b45;
+    text-decoration: underline var(--cyan-color) ;
+}
+
+.datos-estadosalud{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.guardar{
+    width: max-content;
+    height: max-content;
+    padding: 5px 15px 5px 15px;
+    background-color: var(--orange-color);
+    color: white;
+    border:none;
+    border-radius: 5px;
+    margin: 15px;
+}
+
+/*---------PACIENTES ------------------------*/
+
+table{
+    background-color:var(--cyan-color);
+    text-align: center;
+    width: 80%;
+}
+
+#sec-table{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+th{
+    background-color: var(--navalblue-color);
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+    margin: 0;
+}
+
+td{
+    border: 1px solid var(--cyan-color);
+    background-color: #c4c4c4;
+}
+
+.btn-editar{
+    background-color: #2ca3ab;
+    border:none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.btn-eliminar{
+    margin-left: 5px;
+    background-color: rgb(187, 7, 7);
+    border:none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.btn{
+    display: flex;
+    flex-direction: row;
+    padding: 5px 0px 5px 0px;
+    justify-content: center;
+    width: 100%;
+}
+
+.orange-add{
+    background-color: var(--orange-color);
+    color:white;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px 10px 5px 10px;
+    border:none;
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/*-----------------------DASHBOARD-------------*/
+
+#dashboard{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color:#2ca3ab;
+}
+
+#dash-menu{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 20%;
+
+    background-color:var(--navalblue-color);
+}
+
+.dash-button{
+    max-height: 50px;
+    width: 100%;
+    margin-bottom: 15px;
+    border: 3px solid var(--orange-color);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+#dash-screen{
+    display: flex;
+    flex-basis: 80%;
+    background-color: #ec4411;
+    flex-direction: column;
+}
+
+#dash-menu img{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+
