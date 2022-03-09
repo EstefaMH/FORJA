@@ -28,6 +28,9 @@ h3{
     font-size: 18px;
     size: 0vmax;
 }
+a{
+    text-decoration: none;
+}
 #user{
     width:25px;
     height: 25px;
@@ -330,6 +333,7 @@ a.linkpass{
     color: #000000;
     font-weight: 400;
     margin: 5px;
+    text-decoration: underline;
 }
 
 .ingresar{
@@ -366,6 +370,7 @@ a.linkpass{
     border-radius: 50%;
     border:2px solid var(--cyan-color);
     width: 50px;
+    cursor: pointer;
 }
 
 
@@ -527,6 +532,7 @@ a.linkpass{
     border:none;
     border-radius: 5px;
     margin: 15px;
+    cursor: pointer;
 }
 
 /*---------PACIENTES ------------------------*/
@@ -596,7 +602,7 @@ td{
     display: flex;
     justify-content: center;
     align-items: center;
-
+    cursor: pointer;
 }
 
 /*-----------------------DASHBOARD-------------*/
