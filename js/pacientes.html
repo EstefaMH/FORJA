@@ -32,6 +32,10 @@
             <input class="datos-uno" type="date" >
             <input class="datos-uno" type="text" placeholder="N registro">
             </div>
+            <div class="title-form">
+                <img src="../img/16. man-user.svg">
+                <h2>DATOS DEL PACIENTE</h2>
+            </div>
             <article class="datos-paciente">
                 <input type="text" placeholder="Escribe tu nombre">
                 <input type="text" placeholder="Apellidos">
@@ -46,6 +50,11 @@
                 <input type="date" >
                 <input type="text" placeholder="Edad">
             </article>
+
+            <div class="title-form">
+                <img src="../img/bx-location-plus.svg">
+                <h2>INFORMACION DE CONTACTO</h2>
+            </div>
 
             <article class="datos-paciente">
                     <select  id="departamento" name="departamento" required>
@@ -1211,6 +1220,10 @@
                     <input type="number" placeholder="Telefono fijo">
                     <input type="number" placeholder="Celular">   
             </article>
+            <div class="title-form">
+                <img src="../img/bxs-heart.svg">
+                <h2>ESTADO DE SALUD</h2>
+            </div>
 
             <article class="datos-estadosalud">
                 <select>
@@ -1230,23 +1243,29 @@
                  <input type="text" placeholder="Alergias">
             </article>
 
-            <article >
-                <p>El paciente se ha realizado la prueba del covid xon anterioridad y esta ha salido positiva?</p>
-                <div>
-                <label for="si">Si</label>
-                <input type="radio" value="Si" id="si">
-                <label for="no">No</label>
-                <input type="radio" value="No" id="no">
-                </div>
-
-                <p>El paciente ha tenido un  contacto estrecho o cercano  ?</p>
-                <div>
-                    <label for="si">Si</label>
-                    <input type="radio" value="Si" id="si">
+            <article class="abajo-form">
+                <p>El paciente se ha realizado la prueba del covid con anterioridad y esta ha salido positiva?</p>
+                <div class="option">
+                    <div class="yon">
+                        <label for="si">Si</label>
+                        <input type="radio" value="Si" id="si">
+                    </div>
+                    <div class="yon">
                     <label for="no">No</label>
                     <input type="radio" value="No" id="no">
                     </div>
-
+                </div>
+                <p>El paciente ha tenido un  contacto estrecho o cercano  ?</p>
+                <div class="option">
+                    <div class="yon">
+                        <label for="si">Si</label>
+                        <input type="radio" value="Si" id="si">
+                    </div>
+                    <div class="yon">
+                    <label for="no">No</label>
+                    <input type="radio" value="No" id="no">
+                    </div>
+                </div>
             </article>
         </form>
         <button class="guardar">Guardar</button>

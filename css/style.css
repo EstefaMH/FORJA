@@ -318,12 +318,14 @@ a.linkpass{
 #pacientes-registro{
     display: flex;
     width: 100%;
-    min-height: max-content;
+    height: min-content;
+    height: 40px;
     background-color: #1d1b45;
-    border-radius: 15px;
+    border-radius: 5px;
     margin-top: 10px;
     margin-bottom: 10px;
     justify-content: center;
+    align-items: center;
 }
 
 #num-doc{
@@ -367,6 +369,29 @@ a.linkpass{
 
 }
 
+.title-form{
+    display: flex;
+    background-color: #2ca3ab;
+    width: 100%;
+    border-radius: 5px ;
+    height: 30px;
+    justify-content:center;   
+    align-items: center; 
+}
+
+.title-form h2{
+    color: white;
+    font-size: 15px;
+    
+}
+
+.title-form img{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 60px;
+}
+
 .formulario{
     background-color: #c4c4c4;
     border-radius: 15px;
@@ -390,11 +415,12 @@ a.linkpass{
 }
 
 .datos-paciente{
-    background-color: #e62727;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-around;
+    padding-top:10px ;
+    padding-bottom: 10px;
     
 }
 
@@ -414,8 +440,30 @@ a.linkpass{
     display: flex;
     width: 100%;
     justify-content: center;
+    margin-top: 10px;
 }
 
+.option{
+   
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+.radio{
+    width: 50%;
+    text-align: center;
+}
+
+.yon{
+    width: 5%;
+    
+}
+
+.abajo-form {
+    padding: 15px;
+    padding-bottom: 30px;
+}
 .guardar{
     width: max-content;
     height: max-content;
@@ -503,24 +551,49 @@ td{
     display: flex;
     width: 100%;
     height: 100%;
-    background-color:#2ca3ab;
 }
 
 #dash-menu{
     display: flex;
     flex-direction: column;
     flex-basis: 20%;
+    height: 100vh;
 
     background-color:var(--navalblue-color);
 }
 
+.btn-group{
+    background-color: #2ca3ab;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 0%;
+
+}
+
 .dash-button{
-    max-height: 50px;
     width: 100%;
-    margin-bottom: 15px;
+    height: max-content;
     border: 3px solid var(--orange-color);
     border-radius: 5px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+
+.dash-button h1{
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.dash-button img{
+    width: 35px;
+    margin: 0;
 }
 
 
@@ -528,8 +601,9 @@ td{
 #dash-screen{
     display: flex;
     flex-basis: 80%;
-    background-color: #ec4411;
     flex-direction: column;
+    height: 100vh;
+    
 }
 
 #dash-menu img{
@@ -538,3 +612,81 @@ td{
 }
 
 
+.title-db{
+    text-align: center;
+    color: var(--orange-color);
+    flex-basis: 20%; 
+
+}
+
+#busqueda{
+    display: flex;
+    justify-content:center;
+  flex-basis: 15%;
+}
+
+.busqueda-doc{
+    border:none;
+    border-bottom: 3px solid var(--navalblue-color);    
+    width: 300px;
+    height: 33%;
+}
+.search-btn{
+    background-color: var(--navalblue-color);
+    border: 1.5px solid var(--cyan-color);
+    margin: 5px;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    height: max-content;
+}
+.btn-user{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    flex-basis: 15%;
+}
+
+
+.btn-user img{
+    border-radius: 50%;
+    background-color: white;
+    height: 30px;
+    border: 2px  solid var(--orange-color);
+    margin-right:3px ;
+    padding: 2px;
+}
+
+#user-but{
+    display: flex;
+    width: 200px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(0.25turn,--gray-color,white) ;
+    border: none;
+    border-radius: 5px;
+    margin-right: 15px;
+    height: max-content;
+}
+
+#user-but h3{
+    color: #000000;
+    font-size: 15px;
+}
+
+#img-guerreros{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    opacity: 50%;
+    flex-basis: 40%;
+}
+
+.guerreros{
+    text-align: end;
+    opacity: 50%;
+    width: 300px;
+    position: absolute;
+    right:0;
+}
