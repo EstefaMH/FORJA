@@ -22,6 +22,8 @@
     flex-direction: row;
 }
 
+
+
  
 h3{
     color: white;
@@ -32,10 +34,11 @@ a{
     text-decoration: none;
 }
 #user{
-    width:25px;
-    height: 25px;
+    width:20px;
+    height: 20px;
     background-position-x: right;
     fill: white;
+    margin: 0 5px 0 5px;
 }
 
 .boton{
@@ -64,10 +67,17 @@ header{
 }
 
 .icons{
-    width: 45px;
-    height: 50px;
+    width: 25px;
+    height: 25px;
     margin:5px;
 }
+
+.icons-log{
+    width: 35px;
+    height: 50px;
+}
+
+
 
 #info{
     width: 100%;
@@ -102,7 +112,6 @@ footer{
 footer p{
     color: white;
     font-size: 12px;
-
 }
 
 
@@ -113,7 +122,7 @@ footer p{
     display:flex;
     width: 100%;
     height: 100%;
-    min-height: 400px;
+    min-height: 200px;
     background-image: url("../img/2.\ medico.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -122,12 +131,12 @@ footer p{
 }
 #banner h2{
     color: var(--orange-color);
-    font-size: 40px;
+    font-size: 20px;
     margin:0;
 }
 #banner h1{
     color: black;
-    font-size: 36px;
+    font-size: 16px;
     margin:0;
     margin-bottom: 3px;
 }
@@ -136,10 +145,12 @@ footer p{
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    padding: 8px;
 }
 
 .container-info{
-    flex-basis: 70%;
+    flex-basis: 65%;
+    text-align: center;
 }
 
 
@@ -167,7 +178,7 @@ footer p{
     width: 100%;
     display: flex;
     justify-content: space-around;
-    flex-direction: row;
+    flex-direction: column;
 }
 .title-signos{
     display: flex;
@@ -183,11 +194,12 @@ footer p{
 .title-signos h2{
     color:rgb(26, 70, 167);
     font-weight: 300;
+    font-size: 20px;
 }
 .signos{
     flex-basis: 40%;
     text-align: justify;  
-    width: 40%;
+    width: 100%;
     padding: 35px;
 }
 
@@ -751,4 +763,29 @@ td{
     width: 300px;
     position: absolute;
     right:0;
+}
+
+
+
+
+
+/*---------------------------------------------------------------
+---------------------------MEDIA QUERYS--------------------------*/
+
+@media screen (min-width: 769px )  {
+    header{
+        flex-direction: row;
+    }
+    #box-fondo{
+        flex-direction: row;
+    }
+}
+
+@media screen (min-width )
+
+
+
+{
+
+    
 }
