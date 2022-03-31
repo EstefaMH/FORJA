@@ -281,7 +281,7 @@ li{
 
 #login-container{
     display: flex;
-    width: 30%;
+    width: 50%;
     min-height: 400px ;
     height: auto;
     flex-direction: column;
@@ -367,38 +367,60 @@ a.linkpass{
 /*---------------------- REGISTRO PACIENTES ------------------*/
 .header-pacientes{
     display: flex;
+    flex-direction: column;
     width: 100%;
     background-color: rgb(36, 35, 35);
     justify-content: space-between;
     padding: 15px;
     align-items: center;
 }
+
+.pacientes-logo{
+    width: 100%;
+}
+
+.pacientes-logo img{
+    width: 100%;
+
+}
 .pacientes-btn{
     display: flex;
-    width: 120px;
-    height: 50px;
-    margin-right: 50px;
-    justify-content: space-around;
+    width: max-content;
+    max-height: 40px;
+    justify-content: center;
+    align-items: center;
 }
 .pacientes-btn button{
     border-radius: 50%;
     border:2px solid var(--cyan-color);
-    width: 50px;
+    width: 40px;
+    height: 40px;
     cursor: pointer;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
 }
+
+
+.icon-power{
+    width: 100%;
+}
+
 
 
 #pacientes-registro{
     display: flex;
     width: 100%;
     height: min-content;
-    height: 40px;
+    flex-wrap:wrap ;
     background-color: #1d1b45;
     border-radius: 5px;
     margin-top: 10px;
     margin-bottom: 10px;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 #num-doc{
@@ -443,13 +465,27 @@ a.linkpass{
 }
 
 .title-form{
-    display: flex;
+   
     background-color: #2ca3ab;
     width: 100%;
     border-radius: 5px ;
-    height: 30px;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+
+     
+    
+}
+
+.pacientes-title-container{
+    display: flex;
     justify-content:center;   
-    align-items: center; 
+    align-items: center;
+    width: 80%;
+    height: 30px;
+    justify-content: space-around;
+    text-align: center;
+   
 }
 
 .title-form h2{
@@ -461,8 +497,8 @@ a.linkpass{
 .title-form img{
     width: 24px;
     height: 24px;
-    position: absolute;
-    left: 60px;
+    
+    
 }
 
 .formulario{
@@ -521,6 +557,9 @@ a.linkpass{
     width: 100%;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
     
 }
 .radio{
@@ -529,8 +568,10 @@ a.linkpass{
 }
 
 .yon{
-    width: 5%;
-    
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    align-items: center;
 }
 
 .abajo-form {
@@ -570,8 +611,8 @@ th{
     background-color: var(--navalblue-color);
     color: white;
     font-weight: bold;
-    padding: 15px;
     margin: 0;
+    font-size: 12px;
 }
 
 td{
@@ -585,21 +626,25 @@ td{
     border-radius: 5px;
     display: flex;
     align-items: center;
+    width: max-content;
+    margin-bottom: 3px;
+    padding: 0px 12px 0px 12px;
 }
 
 .btn-eliminar{
-    margin-left: 5px;
     background-color: rgb(187, 7, 7);
     border:none;
     border-radius: 5px;
     display: flex;
     align-items: center;
+    width: max-content;
 }
 
 .btn{
     display: flex;
-    flex-direction: row;
-    padding: 5px 0px 5px 0px;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 2px 5px 2px;
     justify-content: center;
     width: 100%;
 }
@@ -772,20 +817,58 @@ td{
 /*---------------------------------------------------------------
 ---------------------------MEDIA QUERYS--------------------------*/
 
-@media screen (min-width: 769px )  {
+@media screen and (min-width: 769px )  {
     header{
         flex-direction: row;
     }
     #box-fondo{
         flex-direction: row;
     }
-}
+    .header-pacientes{
+        flex-direction: row;
+    } 
 
-@media screen (min-width )
+    .pacientes-logo{
+        width: 50%;
+    }
+    .pacientes-btn{
+        width: 15%;
+        height: 50px;
+        margin-right: 20px;
+    }
+
+    .pacientes-btn button{
+        width: 50px;
+    }
+    .pacientes-btn button a img{
+        width: 25px;
+    }
+
+    .option{
+        flex-direction: row ;
+    }
 
 
 
-{
+    #login-container{
+        width: 30%;
+    }
+
+    .btn{
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+    }
+
+    .btn-editar{
+        width: max-content;
+        margin-right: 3px;
+    }
+    
 
     
+
 }
+
+
+
