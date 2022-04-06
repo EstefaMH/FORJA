@@ -12,20 +12,22 @@
 *{
     box-sizing: border-box;
     font-family: 'popins', sans-serif ;
+    margin: 0;
+    padding: 0;
 }
 
 #logo{
-    padding: 50px 20px 20px 20px;
     display: flex;
     justify-content: left;
     align-content: baseline;
     flex-direction: row;
 }
 
-body{
-    width: 100%;
-    height: max-content;
+#logo img{
+    width: 80%;
+    
 }
+
 
 
  
@@ -73,6 +75,7 @@ header{
     flex-direction: column;
     width: 100%;
     align-items: center;
+    padding: 10px 5px 5px 5px;
 }
 
 .text {
@@ -99,7 +102,6 @@ header{
 
 #info{
     width: 100%;
-
 }
 
 
@@ -117,6 +119,7 @@ header{
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 100%;
 }
 
 /*FOOTER*/
@@ -209,12 +212,14 @@ footer p{
     margin-right: 8px;
     width: 35px;
     height: 35px;
+    margin-bottom: 2em;
 }
 
 .title-signos h2{
     color:rgb(26, 70, 167);
     font-weight: 300;
     font-size: 20px;
+    margin-bottom: 2em;
 }
 .signos{
     flex-basis: 40%;
@@ -225,6 +230,8 @@ footer p{
 
 li{
     list-style-image:  url("../img/6.\ check.svg");
+    line-height: 2;
+    margin-left: 3em;
 }
 
 .icon{
@@ -267,7 +274,7 @@ li{
      color: white;
      font-weight: bold;
      font-size: 15px;
-     padding-left: 10px;
+     padding: 5px 0px 5px 10px;
 }
 
 
@@ -301,7 +308,7 @@ li{
 
 #login-container{
     display: flex;
-    width: 50%;
+    width: 70%;
     min-height: 400px ;
     height: auto;
     flex-direction: column;
@@ -373,11 +380,9 @@ a.linkpass{
 .ingresar{
     background-color: var(--orange-color);
     color:white;
-    padding-top: 3px;
-    padding: 3px;
+    font-weight: bold;
     margin: 10px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 5px 45px 5px 45px;
     border-radius: 5px;
     border: 1.5px solid rgba(29, 122, 243, 0.753);
     cursor: pointer;
@@ -877,7 +882,7 @@ td{
 
 
     #login-container{
-        width: 30%;
+        width: 50%;
     }
 
     .btn{
@@ -902,12 +907,18 @@ td{
        min-height: 300px;
     }
     
+    #login-container{
+        width: 40%;
+    }
     
 }
 
 @media screen and (min-width: 1200px ) {
     .container-info{
         line-height: 2.0;
+    }
+    #login-container{
+        width: 35%;
     }
 
 }
