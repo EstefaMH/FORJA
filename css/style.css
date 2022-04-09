@@ -49,7 +49,6 @@ a{
 
 .boton{
     width: max-content;/*SE AJUSTA LA CAJA AL TEXTO*/
-    height: max-content;
     background-color: rgb(26, 70, 167);
     border-radius: 15px;   
     padding: 10px ;
@@ -113,6 +112,7 @@ header{
     height: 50%;
     justify-content: space-around ;
     align-items: center;
+    padding: 2%;
 }
 
 #arriba .cont{
@@ -321,6 +321,7 @@ li{
     padding: 30px;
     background-color: #95f0f7;
     min-height: 100px;
+    text-align: center;
 }
 #login-logo img{
     width: 80%;
