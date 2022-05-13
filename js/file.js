@@ -42,6 +42,7 @@ function access() {
 
 /*::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 function patients() {
+  console.log("entradaaaaa");
 
   let doc = parseInt(document.getElementById('doc').value);
   console.log("numero : " + doc);
@@ -49,17 +50,23 @@ function patients() {
   switch (doc) {
 
     case 523687955:
+      console.log("entrada");
       // document.getElementById('search').addEventListener('mouseup', () => {
-      //alert("Ya cuenta con la primera dosis\nVACUNA : Pfizer\nFECHA: 20/05/2021");
+      //lert("Ya cuenta con la primera dosis\nVACUNA : Pfizer\nFECHA: 20/05/2021");
       modal.classList.add('modal--show');
         document.querySelector('.modal__title').innerHTML = "BIENVENIDO";
-        document.querySelector('.modal__paragraph').innerHTML= "<br>YA CUENTA CON LA PRIMERA DOSIS <br><strong>VACUNA : </strong>Pfizer<br><strong>FECHA: </strong> 20/05/2021";
+        document.querySelector('.modal__paragraph').innerHTML= "<br><strong>YA CUENTA CON LA PRIMERA DOSIS</strong> <br><br><strong>VACUNA : </strong>Pfizer<br><strong>FECHA: </strong> 20/05/2021";
+
 
       closeModal.addEventListener('click', (e) => {
           e.preventDefault();
           modal.classList.remove('modal--show');
         });
-      window.location.assign("pacientes.html");
+      
+      closeModal.addEventListener('click' , ()=>{
+        window.location.assign("vacunacion.html");
+      })
+     
       //});
       break;
 
@@ -69,7 +76,7 @@ function patients() {
       break;
 
     case 25413574:
-      alert("Ya cuenta con el esquema completo.  \nPRIMERA DOSIS \n BIOLOGICO: Pfizer \n FECHA : 30/05/2020  \n\n SEGUNDA DOSIS \n \n BIOLOGICO: Pfizer \n FECHA : 03/11/2020  ");
+      alert("Ya cuenta con el esquema completo.  \nPRIMERA DOSIS \n BIOLOGICO: Pfizer \n FECHA : 30/05/2020  \n\n SEGUNDA DOSIS \n BIOLOGICO: Pfizer \n FECHA : 03/11/2020 \n\n TERCERA DOSIS \n BIOLOGICO: Pfizer \n FECHA : 05/11/2021  ");
       break;
 
     case 1007203506:
@@ -79,11 +86,60 @@ function patients() {
   }
 }
 
-/*------------- VALIDAR FORMULARIO -----------------------*/
-const enviar = document.querySelector('.enviar');
-enviar.disabled = true;
+function patients_dash() {
+ // console.log("entradaaaaa");
 
-function send() {
+  let doc = parseInt(document.getElementById('input-doc').value);
+  //console.log("numero : " + doc);
+
+  switch (doc) {
+
+    case 523687955:
+      console.log("entr");
+       //document.getElementById('search').addEventListener('mouseup', () => {
+      //alert("Ya cuenta con la primera dosis\nVACUNA : Pfizer\nFECHA: 20/05/2021");
+      modal.classList.add('modal--show');
+        document.querySelector('.modal__title').innerHTML = "BIENVENIDO";
+        document.querySelector('.modal__paragraph').innerHTML= "<br><strong>YA CUENTA CON LA PRIMERA DOSIS</strong> <br><br><strong>VACUNA : </strong>Pfizer<br><strong>FECHA: </strong> 20/05/2021";
+
+      closeModal.addEventListener('click', (e) => {
+          e.preventDefault();
+          modal.classList.remove('modal--show');
+        });
+      
+      closeModal.addEventListener('click' , ()=>{
+        window.location.assign('vacunacion.html');
+      });
+       /* closeModal.addEventListener('click' , ()=>{
+          window.location.assign("pacientes.html");
+        })*/
+     
+     
+      //});
+      break;
+
+    case 1001235478:
+      alert("Ya cuenta con dos dosis  \n\nPRIMERA DOSIS \n BIOLOGICO: Pfizer \n FECHA : 30/05/2020  \n\n SEGUNDA DOSIS \n  BIOLOGICO: Pfizer \n FECHA : 03/11/2020  ");
+      window.location.assign("vacunacion.html");
+      break;
+
+    case 25413574:
+      alert("Ya cuenta con el esquema completo.  \nPRIMERA DOSIS \n BIOLOGICO: Pfizer \n FECHA : 30/05/2020  \n\n SEGUNDA DOSIS \n BIOLOGICO: Pfizer \n FECHA : 03/11/2020 \n\n TERCERA DOSIS \n BIOLOGICO: Pfizer \n FECHA : 05/11/2021  ");
+      break;
+
+    case 1007203506:
+      alert("No tiene registros de vacunacion");
+      window.location.assign("pacientes.html");
+      break;
+  }
+}
+
+
+/*------------- VALIDAR FORMULARIO -----------------------*/
+let enviar = document.querySelector('.enviar');
+//enviar.disabled = true;
+
+function send(){
 
   if (validarFormulario() == true) {
     alert("Registro completado");

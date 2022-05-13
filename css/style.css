@@ -801,6 +801,7 @@ td{
     padding: 5px;
     text-align: center;
     height: max-content;
+    cursor: pointer;
 }
 .btn-user{
     display: flex;
@@ -853,7 +854,9 @@ td{
     right:0;
 }
 
-
+#search {
+    background-color: white !important;
+}
 
 
 
