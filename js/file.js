@@ -9,9 +9,9 @@ function access() {
   if (user == "" || password == "") {
     modal.classList.add('modal--show');
     document.querySelector('.modal__title').innerHTML = "COMPLETE LOS DATOS PARA INGRESAR";
-    document.querySelector('.modal__paragraph').innerHTML= "Intente de nuevo";
+    document.querySelector('.modal__paragraph').innerHTML = "Intente de nuevo";
 
-  
+
     closeModal.addEventListener('click', (e) => {
       e.preventDefault();
       modal.classList.remove('modal--show');
@@ -30,9 +30,9 @@ function access() {
 
         modal.classList.add('modal--show');
         document.querySelector('.modal__title').innerHTML = "ERROR CREDENCIALES INCORRECTAS";
-        document.querySelector('.modal__paragraph').innerHTML= "Intente de nuevo";
+        document.querySelector('.modal__paragraph').innerHTML = "Intente de nuevo";
 
-      
+
         closeModal.addEventListener('click', (e) => {
           e.preventDefault();
           modal.classList.remove('modal--show');
@@ -54,19 +54,19 @@ function patients() {
       // document.getElementById('search').addEventListener('mouseup', () => {
       //lert("Ya cuenta con la primera dosis\nVACUNA : Pfizer\nFECHA: 20/05/2021");
       modal.classList.add('modal--show');
-        document.querySelector('.modal__title').innerHTML = "BIENVENIDO";
-        document.querySelector('.modal__paragraph').innerHTML= "<br><strong>YA CUENTA CON LA PRIMERA DOSIS</strong> <br><br><strong>VACUNA : </strong>Pfizer<br><strong>FECHA: </strong> 20/05/2021";
+      document.querySelector('.modal__title').innerHTML = "BIENVENIDO";
+      document.querySelector('.modal__paragraph').innerHTML = "<br><strong>YA CUENTA CON LA PRIMERA DOSIS</strong> <br><br><strong>VACUNA : </strong>Pfizer<br><strong>FECHA: </strong> 20/05/2021";
 
 
       closeModal.addEventListener('click', (e) => {
-          e.preventDefault();
-          modal.classList.remove('modal--show');
-        });
-      
-      closeModal.addEventListener('click' , ()=>{
+        e.preventDefault();
+        modal.classList.remove('modal--show');
+      });
+
+      closeModal.addEventListener('click', () => {
         window.location.assign("vacunacion.html");
       })
-     
+
       //});
       break;
 
@@ -84,10 +84,10 @@ function patients() {
       window.location.assign("pacientes.html");
       break;
   }
-}
+};
 
 function patients_dash() {
- // console.log("entradaaaaa");
+  // console.log("entradaaaaa");
 
   let doc = parseInt(document.getElementById('input-doc').value);
   //console.log("numero : " + doc);
@@ -96,25 +96,25 @@ function patients_dash() {
 
     case 523687955:
       console.log("entr");
-       //document.getElementById('search').addEventListener('mouseup', () => {
+      //document.getElementById('search').addEventListener('mouseup', () => {
       //alert("Ya cuenta con la primera dosis\nVACUNA : Pfizer\nFECHA: 20/05/2021");
       modal.classList.add('modal--show');
-        document.querySelector('.modal__title').innerHTML = "BIENVENIDO";
-        document.querySelector('.modal__paragraph').innerHTML= "<br><strong>YA CUENTA CON LA PRIMERA DOSIS</strong> <br><br><strong>VACUNA : </strong>Pfizer<br><strong>FECHA: </strong> 20/05/2021";
+      document.querySelector('.modal__title').innerHTML = "BIENVENIDO";
+      document.querySelector('.modal__paragraph').innerHTML = "<br><strong>YA CUENTA CON LA PRIMERA DOSIS</strong> <br><br><strong>VACUNA : </strong>Pfizer<br><strong>FECHA: </strong> 20/05/2021";
 
       closeModal.addEventListener('click', (e) => {
-          e.preventDefault();
-          modal.classList.remove('modal--show');
-        });
-      
-      closeModal.addEventListener('click' , ()=>{
+        e.preventDefault();
+        modal.classList.remove('modal--show');
+      });
+
+      closeModal.addEventListener('click', () => {
         window.location.assign('vacunacion.html');
       });
-       /* closeModal.addEventListener('click' , ()=>{
-          window.location.assign("pacientes.html");
-        })*/
-     
-     
+      /* closeModal.addEventListener('click' , ()=>{
+         window.location.assign("pacientes.html");
+       })*/
+
+
       //});
       break;
 
@@ -132,14 +132,14 @@ function patients_dash() {
       window.location.assign("pacientes.html");
       break;
   }
-}
+};
 
 
 /*------------- VALIDAR FORMULARIO -----------------------*/
 let enviar = document.querySelector('.enviar');
 //enviar.disabled = true;
 
-function send(){
+function send() {
 
   if (validarFormulario() == true) {
     alert("Registro completado");
@@ -178,16 +178,27 @@ function validarFormulario() {
         } else
           if (document.getElementById('campo6').value == 'Tipo de documento') {
             alert('No ha seleccionado ninguna opcion');
-          } else if (document.getElementById('campo11').value == '') {
+          } else if (document.getElementById('campo7').value == '') {
+            alert('El campo fecha esta vacio');
+          }
+          else if (document.getElementById('campo8').value == '' || 0 ) {
+            alert('El campo edad esta vacio');
+          }else if (document.getElementById('campo9').value == 'Municipio de residencia') {
+            alert('El campo fecha esta vacio');
+          }else if (document.getElementById('campo10').value == '') {
+            alert('El campo direccion esta vacio');
+          }
+          else if (document.getElementById('campo11').value == '') {
             alert('correo incorrecto ');
-          } else {
+          } else if (document.getElementById('campo12').value == '') {
+            alert('El campo celular esta vacio');
+          }else {
             console.log("todo fue un exito");
             validar = true;
             enviar.disabled = false;
-
           }
   return validar;
-}
+};
 
 
 function validarCadenasString(str) {
@@ -195,4 +206,4 @@ function validarCadenasString(str) {
   let myArray = myRe.test(str);
 
   return myArray;
-}
+};
