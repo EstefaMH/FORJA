@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- JavaScript Bundle with Popper -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/modal.css">
     <title>Login</title>
 </head>
 
@@ -22,25 +24,32 @@
                 <img src="../img/0. logoforja.png">
                 <h3>Contigo siempre</h3>
             </div>
-            <div id="login-form">
-                <form action="../views/dashboard.html">
+            <div id="login-form" >
+                <form id="loginn"  name="login"  >
                     <div class="form-group">
                         <label for="user-input">Usuario</label>
-                        <input class="entrada" type="text" id="user-input" name="Contrasena" required>
+                        <input class="entrada" type="text" id="user-input" name="usuario" required>
                     </div>
                     <div class="form-group">
                         <label for="password">Contrasena</label>
-                        <input class="entrada" type="password" id="password" name="Contrasena" required>
+                        <input class="entrada" type="password" id="password" name="contrasena" required>
                     </div>
                     <div class="form-group">
                         <a class="linkpass" href="">Olvidaste tu contrasena?</a>
-                        
-                          <button type="submit" class="ingresar">Ingresar</button>
+                          <button type="button" onclick="access()" class="ingresar hero__cta">Ingresar</button>
                     </div>
                 </form>
             </div>
         </div>
     </section>
+    <section class="modal">
+        <div class="modal__container">
+            <img src="../img/0. logoforja.png" class="modal__img" alt="">
+            <h2 class="modal__title"></h2>
+            <p class="modal__paragraph"></p>
+            <a href="#" class="modal__close">Cerrar Modal</a>
+        </div>
+    </section>
 </body>
-
+<script src="../js/file.js"></script>
 </html>

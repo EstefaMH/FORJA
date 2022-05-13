@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
-<link rel="stylesheet" type="text/css" href="../css/style.css">
+<html lang="Es-es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/modal.css">
     <title> Pacientes</title>
 </head>
 
@@ -32,128 +33,139 @@
 
     <section id="uno">
         <a href="../views/pacientes.html">
-        <button class="orange-add">
-            Agregar
-            <img src="../img/user-plus-solid-24.png">
-        </button>
+            <button class="orange-add">Agregar
+                <img src="../img/user-plus-solid-24.png">
+            </button>
         </a>
         <article id="num-doc">
-            <input type="number" placeholder="Numero de documento" class="input-doc">
-            <button>
+                
+                <input type="text" id="doc"  placeholder="Numero de documento" class="input-doc">
+                <button id="search" class="hero__cta" type="button" action=''"" onclick= patients() >
                 <img src="../img/bx-search.svg">
-            </button>
+                </button>
+            
         </article>
     </section>
     <h1 class="title-pac">PACIENTES</h1>
 
     <section class="animate__animated  animate__backInLeft" id="sec-table">
-    <table>
-        <tr>
-            <th># DE REGISTRO</th>
-            <th># DOCUMENTO</th>
-            <th>NOMBRES</th>
-            <th>APELLIDOS</th>
-            <th>EDAD </th>
-            <th>ACCIONES</th>
-        </tr>
-        <tr>
-            <td>11111</td>
-            <td>45464</td>
-            <td>Paola</td>
-            <td>Perez</td>
-            <td>2+16</td>
-            <td class="btn">
-                <button class="btn-editar">Editar
-                    <img src="../img/bx-pencil.svg" alt="lapiz">
-                </button>
-                <button class="btn-eliminar">Eliminar
-                    <img src="../img/bx-window-close.svg">
-                </button>
-            </td>
-        </tr>
+        <table>
+            <tr>
+                <th># DE REGISTRO</th>
+                <th># DOCUMENTO</th>
+                <th>NOMBRES</th>
+                <th>APELLIDOS</th>
+                <th>EDAD </th>
+                <th>ACCIONES</th>
+            </tr>
+            <tr>
+                <td>11111</td>
+                <td>45464</td>
+                <td>Paola</td>
+                <td>Perez</td>
+                <td>2+16</td>
+                <td class="btn">
+                    <button class="btn-editar">Editar
+                        <img src="../img/bx-pencil.svg" alt="lapiz">
+                    </button>
+                    <button class="btn-eliminar">Eliminar
+                        <img src="../img/bx-window-close.svg">
+                    </button>
+                </td>
+            </tr>
 
-        <tr>
-            <td>212146546</td>
-            <td>654+488+</td>
-            <td>Ingrid</td>
-            <td>Perez</td>
-            <td>2+16</td>
-            <td class="btn">
-                <button class="btn-editar">Editar
-                    <img src="../img/bx-pencil.svg" alt="lapiz">
-                </button>
-                <button class="btn-eliminar">Eliminar
-                    <img src="../img/bx-window-close.svg">
-                </button>
-            </td>
-        </tr>
-        <tr>
-            <td>212146546</td>
-            <td>654+488+</td>
-            <td>Ingrid</td>
-            <td>Perez</td>
-            <td>2+16</td>
-            <td class="btn">
-                <button class="btn-editar">Editar
-                    <img src="../img/bx-pencil.svg" alt="lapiz">
-                </button>
-                <button class="btn-eliminar">Eliminar
-                    <img src="../img/bx-window-close.svg">
-                </button>
-            </td>
-        </tr>
-        <tr>
-            <td>212146546</td>
-            <td>654+488+</td>
-            <td>Ingrid</td>
-            <td>Perez</td>
-            <td>2+16</td>
-            <td class="btn">
-                <button class="btn-editar">Editar
-                    <img src="../img/bx-pencil.svg" alt="lapiz">
-                </button>
-                <button class="btn-eliminar">Eliminar
-                    <img src="../img/bx-window-close.svg">
-                </button>
-            </td>
-        </tr>
-        <tr>
-            <td>212146546</td>
-            <td>654+488+</td>
-            <td>Ingrid</td>
-            <td>Perez</td>
-            <td>2+16</td>
-            <td class="btn">
-                <button class="btn-editar">Editar
-                    <img src="../img/bx-pencil.svg" alt="lapiz">
-                </button>
-                <button class="btn-eliminar">Eliminar
-                    <img src="../img/bx-window-close.svg">
-                </button>
-            </td>
-        </tr>
-        <tr>
-            <td>212146546</td>
-            <td>654+488+</td>
-            <td>Ingrid</td>
-            <td>Perez</td>
-            <td>2+16</td>
-            <td class="btn">
-                <button class="btn-editar">Editar
-                    <img src="../img/bx-pencil.svg" alt="lapiz">
-                </button>
-                <button class="btn-eliminar">Eliminar
-                    <img src="../img/bx-window-close.svg">
-                </button>
-            </td>
-        </tr>
-    </table>
-</section>
+            <tr>
+                <td>212146546</td>
+                <td>654+488+</td>
+                <td>Ingrid</td>
+                <td>Perez</td>
+                <td>2+16</td>
+                <td class="btn">
+                    <button class="btn-editar">Editar
+                        <img src="../img/bx-pencil.svg" alt="lapiz">
+                    </button>
+                    <button class="btn-eliminar">Eliminar
+                        <img src="../img/bx-window-close.svg">
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>212146546</td>
+                <td>654+488+</td>
+                <td>Ingrid</td>
+                <td>Perez</td>
+                <td>2+16</td>
+                <td class="btn">
+                    <button class="btn-editar">Editar
+                        <img src="../img/bx-pencil.svg" alt="lapiz">
+                    </button>
+                    <button class="btn-eliminar">Eliminar
+                        <img src="../img/bx-window-close.svg">
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>212146546</td>
+                <td>654+488+</td>
+                <td>Ingrid</td>
+                <td>Perez</td>
+                <td>2+16</td>
+                <td class="btn">
+                    <button class="btn-editar">Editar
+                        <img src="../img/bx-pencil.svg" alt="lapiz">
+                    </button>
+                    <button class="btn-eliminar">Eliminar
+                        <img src="../img/bx-window-close.svg">
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>212146546</td>
+                <td>654+488+</td>
+                <td>Ingrid</td>
+                <td>Perez</td>
+                <td>2+16</td>
+                <td class="btn">
+                    <button class="btn-editar">Editar
+                        <img src="../img/bx-pencil.svg" alt="lapiz">
+                    </button>
+                    <button class="btn-eliminar">Eliminar
+                        <img src="../img/bx-window-close.svg">
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>212146546</td>
+                <td>654+488+</td>
+                <td>Ingrid</td>
+                <td>Perez</td>
+                <td>2+16</td>
+                <td class="btn">
+                    <button class="btn-editar">Editar
+                        <img src="../img/bx-pencil.svg" alt="lapiz">
+                    </button>
+                    <button class="btn-eliminar">Eliminar
+                        <img src="../img/bx-window-close.svg">
+                    </button>
+                </td>
+            </tr>
+        </table>
+    </section>
 
     <footer>
         <p>@ 2021 FORJA EMPRESAS</p>
     </footer>
 
+    <section class="modal">
+        <div class="modal__container">
+            <img src="../img/0. logoforja.png" class="modal__img" alt="">
+            <h2 class="modal__title"></h2>
+            <p class="modal__paragraph"></p>
+            <a href="#" class="modal__close">Cerrar Modal</a>
+        </div>
+    </section>
+
+    <script src="../js/file.js"></script>
 </body>
 
 </html>

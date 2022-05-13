@@ -6,7 +6,6 @@
     --cyan-color: #2ca3ab;
     --gray-color: #c4c4c4;
     --orange-color:#f3610e;
-
 }
 
 *{
@@ -27,18 +26,17 @@
     width: 80%;
     
 }
-
-
-
  
 h3{
     color: white;
     font-size: 18px;
     size: 0vmax;
 }
+
 a{
     text-decoration: none;
 }
+
 #user{
     width:20px;
     height: 20px;
@@ -77,7 +75,7 @@ header{
     padding: 10px 5px 5px 5px;
 }
 
-.text {
+.text{
     font-size: small;
 }
 
@@ -97,16 +95,14 @@ header{
     height: 50px;
 }
 
-
-
 #info{
     width: 100%;
 }
 
-
 .linea img{
     width: 100%;
 }
+
 #arriba{
     display: flex;
     height: 50%;
@@ -131,11 +127,11 @@ footer{
     justify-content: center;
     background-color: black;
 }
+
 footer p{
     color: white;
     font-size: 12px;
 }
-
 
 /*------------------INDEX-------------*/
 
@@ -149,21 +145,21 @@ footer p{
     background-repeat: no-repeat;
     background-size: cover;
     align-items: center;
-
 }
-
 
 #banner h2{
     color: var(--orange-color);
     font-size: 20px;
     margin:0;
 }
+
 #banner h1{
     color: black;
     font-size: 16px;
     margin:0;
     margin-bottom: 3px;
 }
+
 .banner-info{
     display: flex;
     justify-content: center;
@@ -177,7 +173,6 @@ footer p{
     text-align: center;
 }
 
-
 .franja{
     display: flex;
     width: 100%;
@@ -186,7 +181,8 @@ footer p{
 .franja img{
     min-width: 100%;
 }
-/*CAJA 3 */
+
+/* -------------- CAJA 3 ------------------- */
 .caja3{
     display: flex;
     width: 100%;
@@ -196,6 +192,7 @@ footer p{
     background-size: cover ;
     
 }
+
 #box-fondo{
     background-color: rgba(250, 249, 249, 0.63);
     width: 100%;
@@ -203,6 +200,7 @@ footer p{
     justify-content: space-around;
     flex-direction: column;
 }
+
 .title-signos{
     display: flex;
     align-items: center;
@@ -221,6 +219,7 @@ footer p{
     font-size: 20px;
     margin-bottom: 2em;
 }
+
 .signos{
     flex-basis: 40%;
     text-align: justify;  
@@ -270,15 +269,13 @@ li{
     background-color: var(--gray-color);
     flex-direction: column;
 }
+
 .box-group p{
      color: white;
      font-weight: bold;
      font-size: 15px;
      padding: 5px 0px 5px 10px;
 }
-
-
-
 
 /*------------------LOGIN--------------------*/
 #login {
@@ -466,8 +463,9 @@ a.linkpass{
 }
 
 #num-doc button{
-    border: 2px solid var(--cyan-color) ;
+    border: 2px solid var(--cyan-color);
     border-radius: 5px;
+    cursor: pointer;
 }
 
 #pacientes-registro h1{
@@ -570,7 +568,7 @@ a.linkpass{
     text-align: center;
     color: #1d1b45;
     text-decoration: underline var(--cyan-color) ;
-    margin: 15px 0px 15px 0px;
+    margin: 15px 0px 60px 0px;
 }
 
 .datos-estadosalud{
@@ -608,6 +606,7 @@ a.linkpass{
 }
 .guardar{
     width: max-content;
+    min-width: 100px;
     height: max-content;
     padding: 5px 15px 5px 15px;
     background-color: var(--orange-color);
@@ -618,6 +617,15 @@ a.linkpass{
     cursor: pointer;
 }
 
+.enviar:disabled{
+    background-color: #828282;
+    color: #2f2f2f;
+    min-width: 100px;
+    width: max-content;
+}
+
+
+
 /*---------PACIENTES ------------------------*/
 
 table{
@@ -625,6 +633,7 @@ table{
     text-align: center;
     width: 80vw;
     font-size: small;
+    margin-bottom: 50px;
 }
 
 #sec-table{
@@ -653,11 +662,14 @@ td{
     border:none;
     border-radius: 5px;
     display: flex;
+    justify-content: space-around;
     align-items: center;
     width: max-content;
     margin-bottom: 3px;
     padding: 0px 12px 0px 12px;
+    
 }
+
 
 .btn-eliminar{
     background-color: rgb(187, 7, 7);
@@ -926,5 +938,104 @@ td{
 
 }
 
+/*------------- VACUNACION --------------*/
+
+.header-vacunacion{
+    background-color: rgb(36, 35, 35);
+}
+
+.con-vacunacion{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-self:flex-end;
+    align-items: center;
+}
+
+.vacunacion-btn{
+    display: flex;
+    max-height: max-content;
+}
+
+.vacunacion-btn button{
+    border-radius: 50%;
+    padding: 1.5%;
+    min-width: 40px;
+    min-height: 40px;
+    border:2px solid var(--cyan-color);
+    cursor: pointer;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
 
 
+
+.vacunacion-logo{
+    width: 60%;
+}
+
+.vacunacion-logo img{
+    width: 100%;
+}
+
+.estado-vacunacion{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 2% 4% 2% 4%;
+}
+
+.vacunacion-form-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.vacunacion-form{
+    border: 1.5px solid black;
+    width: 90%;
+    
+}
+
+.datos-vacunacion{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: 2%;
+
+}
+
+.vac-data{
+    width: 48%;
+    margin: 1% 0% 1% 0%;
+    min-height: 25px ;
+}
+
+.info-vacunacion{
+    margin-top: 3%;   
+}
+
+.vac-info{
+    width: 30%;
+    min-height: 25px ;
+}
+
+.con-vac-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    height: 25px;
+}
+
+.vac-textArea{
+    display: flex;
+    margin: 3% auto;
+    text-align: center;
+    border: 1px solid var(--cyan-color);
+
+}

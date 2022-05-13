@@ -6,7 +6,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/modal.css">
     <title>Registro Pacientes</title>
 </head>
 
@@ -21,7 +25,7 @@
                     <img class="icon-power" src="../img/bxs-home.svg">
                 </a>
             </button>
-            
+
             <button>
                 <a href="../index.html">
                     <img class="icon-power" src="../img/bx-power-off.svg">
@@ -34,41 +38,41 @@
         <h1>REGISTRO USUARIO NUEVO</h1>
     </section>
     <section id="pacientes-form">
-        <form class="formulario" id="form-registro">
+        <form class="formulario" id="form-registro" onsubmit="send()" >
             <div class="datos-container">
-                <input class="datos-uno" type="date">
-                <input class="datos-uno" type="text" placeholder="N registro">
+                <input id="campo1" class="datos-uno" type="date" required >
+                <input id="campo2" class="datos-uno" type="text" placeholder="N registro" required>
             </div>
             <div class="title-form animate__animated  animate__zoomIn">
-                <div class="pacientes-title-container" >
-                <img src="../img/16. man-user.svg">
-                <h2>DATOS DEL PACIENTE</h2>
+                <div class="pacientes-title-container">
+                    <img src="../img/16. man-user.svg">
+                    <h2>DATOS DEL PACIENTE</h2>
                 </div>
             </div>
             <article class="datos-paciente">
-                <input type="text" placeholder="Escribe tu nombre" required>
-                <input type="text" placeholder="Apellidos" required>
-                <input type="text" placeholder="Numero de identificacion" required>
-                <select required>
+                <input id="campo3" type="text" placeholder="Escribe tu nombre">
+                <input id="campo4" type="text" placeholder="Apellidos">
+                <input id="campo5" type="text" placeholder="Numero de identificacion">
+                <select required id="campo6">
                     <option disabled selected>Tipo de documento</option>
                     <option value="0">Cedula Ciudadania</option>
                     <option value="1">T.I</option>
                     <option value="2">Registro Civil</option>
                     <option value="3">Cedula Extranjeria</option>
                 </select>
-                <input type="date">
-                <input type="text" placeholder="Edad">
+                <input type="date" id="campo7">
+                <input type="text" placeholder="Edad" id="campo8">
             </article>
 
             <div class="title-form animate__animated  animate__zoomIn">
-                <div class="pacientes-title-container" >
-                <img src="../img/bx-location-plus.svg">
-                <h2>INFORMACION DE CONTACTO</h2>
+                <div class="pacientes-title-container">
+                    <img src="../img/bx-location-plus.svg">
+                    <h2>INFORMACION DE CONTACTO</h2>
                 </div>
             </div>
 
             <article class="datos-paciente">
-                <select id="departamento" name="departamento" required>
+                <select id="departamento campo" name="departamento" required>
                     <option disabled selected>Departamento de residencia</option>
                     <option value="Amazonas">Amazonas</option>
                     <option value="Antioquia">Antioquia</option>
@@ -104,7 +108,7 @@
                     <option value="Vichada">Vichada</option>
                 </select>
 
-                <select class="form-control" id="city" required>
+                <select class="form-control" id="city campo9" required>
                     <option disabled selected>Municipio de residencia</option>
                     <option value="Abejorral">Abejorral</option>
                     <option value="Abrego">Abrego</option>
@@ -1226,27 +1230,27 @@
                     <option value="Zipaquirá">Zipaquirá</option>
                     <option value="Zona Bananera">Zona Bananera</option>
                 </select>
-                <input type="text" placeholder="Direccion">
-                <input type="email" placeholder="Correo">
+                <input id="campo10" type="text" placeholder="Direccion">
+                <input id="campo11" type="email" placeholder="Correo">
                 <input type="number" placeholder="Telefono fijo">
-                <input type="number" placeholder="Celular">
+                <input id="campo12" type="number" placeholder="Celular">
             </article>
             <div class="title-form animate__animated  animate__zoomIn">
-                <div class="pacientes-title-container" >
-                <img src="../img/bxs-heart.svg">
-                <h2>ESTADO DE SALUD</h2>
+                <div class="pacientes-title-container">
+                    <img src="../img/bxs-heart.svg">
+                    <h2>ESTADO DE SALUD</h2>
                 </div>
             </div>
 
             <article class="datos-estadosalud">
-                <select>
+                <select id="campo13">
                     <option disabled selected>Pre-existencias</option>
                     <option>
                     <option value="0">Si</option>
                     <option value="1">No</option>
                     </option>
                 </select>
-                <select>
+                <select id="campo14">
                     <option disabled selected>Discapacidad</option>
                     <option>
                     <option value="0">Si</option>
@@ -1261,32 +1265,48 @@
                 <div class="option">
                     <div class="yon">
                         <label for="si">Si</label>
-                        <input type="radio" value="Si" id="si">
+                        <input id="campo15" type="radio" value="Si" id="si">
                     </div>
                     <div class="yon">
                         <label for="no">No</label>
-                        <input type="radio" value="No" id="no">
+                        <input id="campo16" type="radio" value="No" id="no">
                     </div>
                 </div>
                 <p>El paciente ha tenido un contacto estrecho o cercano ?</p>
                 <div class="option">
                     <div class="yon">
                         <label for="si">Si</label>
-                        <input type="radio" value="Si" id="si">
+                        <input id="campo17" type="radio" value="Si" id="si">
                     </div>
                     <div class="yon">
                         <label for="no">No</label>
-                        <input type="radio" value="No" id="no">
+                        <input id="campo18" type="radio" value="No" id="no">
                     </div>
                 </div>
             </article>
+
         </form>
-        <button type="submit" form="form-registro" class="guardar">Guardar</button>
+        <button type="button" form="form-registro" onclick="validarFormulario()" class="guardar">Guardar</button>
+
+        <button type="submit" form="form-registro" class="guardar enviar">Enviar</input>
+
+
+    </section>
+
+    <section class="modal">
+        <div class="modal__container">
+            <img src="../img/0. logoforja.png" class="modal__img" alt="">
+            <h2 class="modal__title"></h2>
+            <p class="modal__paragraph"></p>
+            <a href="#" class="modal__close">Cerrar Modal</a>
+        </div>
     </section>
 
     <footer>
         <p>@ 2021 FORJA EMPRESAS</p>
     </footer>
+
+    <script src="../js/file.js"></script>
 </body>
 
 </html>

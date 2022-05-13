@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <title>Vacunacion</title>
+</head>
+
+<body>
+    <header class="header-vacunacion">
+        <div class="con-vacunacion">
+
+            <div class="vacunacion-logo ">
+                <img src="../img/0. logoforja.png">
+            </div>
+            <div class="vacunacion-btn">
+                <button>
+                    <a href="../views/dashboard.html">
+                        <img class="icon-power" src="../img/bxs-home.svg">
+                    </a>
+                </button>
+
+                <button>
+                    <a href="../index.html">
+                        <img class="icon-power" src="../img/bx-power-off.svg">
+                    </a>
+                </button>
+            </div>
+        </div>
+    </header>
+    <img class="franja" src="../img/12. franja.svg">
+
+    <section class="estado-vacunacion">
+        <article>
+            <p>Estado Activo</p>
+        </article>
+        <article>
+            <button type="submit" class="guardar">Guardar cambios</button>
+            <a href="pacientes.html">
+                <button type="button" class="guardar">Cerrar</button>
+            </a>
+        </article>
+    </section>
+    <h>INFORMACION DEL PACIENTE</h>
+    <section class="vacunacion-form-container">
+        <form class="formulario vacunacion-form">
+            <div class="datos-container datos-vacunacion">
+                <input  class="datos-uno vac-data" type="date" required >
+                <input  class="datos-uno vac-data" type="text" placeholder="N registro" required>
+            </div>
+            <div class="title-form animate__animated  animate__zoomIn">
+                <div class="pacientes-title-container">
+                    <img src="../img/injection-solid-24.png">
+                    <h2>DATOS PERSONALES</h2>
+                </div>
+            </div>
+            <article class="datos-paciente datos-vacunacion">
+                <input class="datos-uno vac-data" type="text" placeholder="Nombre">
+                <input class="datos-uno vac-data " type="text" placeholder="Apellidos">
+                <input class="datos-uno vac-data" type="text" placeholder="Numero de identificacion">
+                <input class="datos-uno vac-data" type="date" >
+                <input class="datos-uno vac-data" type="text" placeholder="Edad">
+                <select required class="vac-data">
+                    <option disabled selected>Tipo de documento</option>
+                    <option value="0">Cedula Ciudadania</option>
+                    <option value="1">T.I</option>
+                    <option value="2">Registro Civil</option>
+                    <option value="3">Cedula Extranjeria</option>
+                </select>
+                
+            </article>
+
+        </form>
+    </section>
+
+        <section class="vacunacion-form-container">
+            <form class="formulario vacunacion-form" >
+                <div class="title-form info-vacunacion animate__animated  animate__zoomIn">
+                    <div class="pacientes-title-container ">
+                        <img src="../img/injection-solid-24.png">
+                        <h2>INFORMACION DE VACUNACION</h2>
+                    </div>
+                </div>
+                <article class="datos-paciente datos-vacunacion">
+                    <select required class="vac-data">
+                        <option disabled selected>Sede</option>
+                        <option value="0">Bogota</option>
+                        <option value="1">Chia</option>
+                    </select>
+                    <select required class="vac-data">
+                        <option disabled selected>Profesional</option>
+                        <option value="0">Juan Perez</option>
+                        <option value="1">Nicolas Arias</option>
+                        <option value="2">Sebastian Arango</option>
+                    </select>
+                    <input class="datos-uno vac-data" type="text" placeholder="ID Profesional">
+                    <input class="datos-uno vac-data" type="text" placeholder="dosis">
+
+                    <article class="datos-estadosalud con-vac-info">
+                        <select class="vac-info">
+                            <option disabled selected>Biologico</option>
+                            <option>
+                            <option value="0">Pfizer</option>
+                            <option value="1">Moderna</option>
+                            <option value="2">Aztraseneca</option>
+                            <option value="3">Janssen</option>
+                            <option value="2">Sinovac</option>
+                            </option>
+                        </select>
+                        <input class="datos-uno vac-info" type="text" placeholder="Fecha 1ra dosis">
+                        <input class="datos-uno vac-info" type="text" placeholder="Fecha 2da dosis">
+
+                    </article>
+
+                    <textarea class="vac-textArea" placeholder="Observaciones adicionales" rows="3" cols="50"></textarea>
+ 
+                </article>
+            </form>
+    </section>
+
+    <footer>
+        <p>@ 2021 FORJA EMPRESAS</p>
+    </footer>
+</body>
+</html>
