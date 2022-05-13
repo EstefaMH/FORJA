@@ -70,19 +70,57 @@ function patients() {
       //});
       break;
 
-    case 1001235478:
-      alert("Ya cuenta con dos dosis  \n\nPRIMERA DOSIS \n BIOLOGICO: Pfizer \n FECHA : 30/05/2020  \n\n SEGUNDA DOSIS \n  BIOLOGICO: Pfizer \n FECHA : 03/11/2020  ");
-      window.location.assign("vacunacion.html");
-      break;
-
-    case 25413574:
-      alert("Ya cuenta con el esquema completo.  \nPRIMERA DOSIS \n BIOLOGICO: Pfizer \n FECHA : 30/05/2020  \n\n SEGUNDA DOSIS \n BIOLOGICO: Pfizer \n FECHA : 03/11/2020 \n\n TERCERA DOSIS \n BIOLOGICO: Pfizer \n FECHA : 05/11/2021  ");
-      break;
-
-    case 1007203506:
-      alert("No tiene registros de vacunacion");
-      window.location.assign("pacientes.html");
-      break;
+      case 1001235478:
+        //alert("Ya cuenta con dos dosis  \n\nPRIMERA DOSIS \n BIOLOGICO: Pfizer \n FECHA : 30/05/2020  \n\n SEGUNDA DOSIS \n  BIOLOGICO: Pfizer \n FECHA : 03/11/2020  ");
+        //window.location.assign("vacunacion.html");
+  
+        modal.classList.add('modal--show');
+        document.querySelector('.modal__title').innerHTML = "BIENVENIDO";
+        document.querySelector('.modal__paragraph').innerHTML = "<br><strong>YA CUENTA CON DOS DOSIS</strong> <br><br>PRIMERA DOSIS <br>BIOLOGICO: Pfizer <br> FECHA : 30/05/2020 <br><br> SEGUNDA DOSIS <br>  BIOLOGICO: Pfizer <br> FECHA : 03/11/2020  ";
+  
+        closeModal.addEventListener('click', (e) => {
+          e.preventDefault();
+          modal.classList.remove('modal--show');
+        });
+  
+        closeModal.addEventListener('click', () => {
+          window.location.assign('vacunacion.html');
+        });
+        break;
+  
+      case 25413574:
+        //alert("Ya cuenta con el esquema completo.  \nPRIMERA DOSIS \n BIOLOGICO: Pfizer \n FECHA : 30/05/2020  \n\n SEGUNDA DOSIS \n BIOLOGICO: Pfizer \n FECHA : 03/11/2020 \n\n TERCERA DOSIS \n BIOLOGICO: Pfizer \n FECHA : 05/11/2021  ");
+        modal.classList.add('modal--show');
+        document.querySelector('.modal__title').innerHTML = "BIENVENIDO";
+        document.querySelector('.modal__paragraph').innerHTML = "<br><strong>YA CUENTA CON DOS DOSIS</strong> <br><br>PRIMERA DOSIS <br>BIOLOGICO: Pfizer <br> FECHA : 30/05/2020 <br><br> SEGUNDA DOSIS <br>  BIOLOGICO: Pfizer <br> FECHA : 03/11/2020 <br><br> TERCERA DOSIS <br>  BIOLOGICO: Pfizer <br> FECHA : 05/12/2021 ";
+  
+        closeModal.addEventListener('click', (e) => {
+          e.preventDefault();
+          modal.classList.remove('modal--show');
+        });
+  
+        closeModal.addEventListener('click', () => {
+          window.location.assign('vacunacion.html');
+        });
+        
+        break;
+  
+      case 1007203506:
+       // alert("No tiene registros de vacunacion");
+       modal.classList.add('modal--show');
+        document.querySelector('.modal__title').innerHTML = "BIENVENIDO";
+        document.querySelector('.modal__paragraph').innerHTML = "<br><strong>YA CUENTA CON EL ESQUEMA DE VACUNACION COMPLETO</strong> ";
+  
+        closeModal.addEventListener('click', (e) => {
+          e.preventDefault();
+          modal.classList.remove('modal--show');
+        });
+  
+        closeModal.addEventListener('click', () => {
+          window.location.assign('pacientes.html');
+        });
+       
+        break;
   }
 };
 
@@ -119,17 +157,55 @@ function patients_dash() {
       break;
 
     case 1001235478:
-      alert("Ya cuenta con dos dosis  \n\nPRIMERA DOSIS \n BIOLOGICO: Pfizer \n FECHA : 30/05/2020  \n\n SEGUNDA DOSIS \n  BIOLOGICO: Pfizer \n FECHA : 03/11/2020  ");
-      window.location.assign("vacunacion.html");
+      //alert("Ya cuenta con dos dosis  \n\nPRIMERA DOSIS \n BIOLOGICO: Pfizer \n FECHA : 30/05/2020  \n\n SEGUNDA DOSIS \n  BIOLOGICO: Pfizer \n FECHA : 03/11/2020  ");
+      //window.location.assign("vacunacion.html");
+
+      modal.classList.add('modal--show');
+      document.querySelector('.modal__title').innerHTML = "BIENVENIDO";
+      document.querySelector('.modal__paragraph').innerHTML = "<br><strong>YA CUENTA CON DOS DOSIS</strong> <br><br><strong>PRIMERA DOSIS</strong> <br>BIOLOGICO: Pfizer <br> FECHA : 30/05/2020 <br><br> <strong>SEGUNDA DOSIS</strong> <br>  BIOLOGICO: Pfizer <br> FECHA : 03/11/2020  ";
+
+      closeModal.addEventListener('click', (e) => {
+        e.preventDefault();
+        modal.classList.remove('modal--show');
+      });
+
+      closeModal.addEventListener('click', () => {
+        window.location.assign('vacunacion.html');
+      });
       break;
 
     case 25413574:
-      alert("Ya cuenta con el esquema completo.  \nPRIMERA DOSIS \n BIOLOGICO: Pfizer \n FECHA : 30/05/2020  \n\n SEGUNDA DOSIS \n BIOLOGICO: Pfizer \n FECHA : 03/11/2020 \n\n TERCERA DOSIS \n BIOLOGICO: Pfizer \n FECHA : 05/11/2021  ");
+      //alert("Ya cuenta con el esquema completo.  \nPRIMERA DOSIS \n BIOLOGICO: Pfizer \n FECHA : 30/05/2020  \n\n SEGUNDA DOSIS \n BIOLOGICO: Pfizer \n FECHA : 03/11/2020 \n\n TERCERA DOSIS \n BIOLOGICO: Pfizer \n FECHA : 05/11/2021  ");
+      modal.classList.add('modal--show');
+      document.querySelector('.modal__title').innerHTML = "BIENVENIDO";
+      document.querySelector('.modal__paragraph').innerHTML = "<br><strong>YA CUENTA CON DOS DOSIS</strong> <br><br><strong>PRIMERA DOSIS</strong> <br>BIOLOGICO: Pfizer <br> FECHA : 30/05/2020 <br><br> <strong>SEGUNDA DOSIS </strong><br>  BIOLOGICO: Pfizer <br> FECHA : 03/11/2020 <br><br> <strong>TERCERA DOSIS</strong> <br>  BIOLOGICO: Pfizer <br> FECHA : 05/12/2021 ";
+
+      closeModal.addEventListener('click', (e) => {
+        e.preventDefault();
+        modal.classList.remove('modal--show');
+      });
+
+      closeModal.addEventListener('click', () => {
+        window.location.assign('vacunacion.html');
+      });
+      
       break;
 
     case 1007203506:
-      alert("No tiene registros de vacunacion");
-      window.location.assign("pacientes.html");
+     // alert("No tiene registros de vacunacion");
+     modal.classList.add('modal--show');
+      document.querySelector('.modal__title').innerHTML = "BIENVENIDO";
+      document.querySelector('.modal__paragraph').innerHTML = "<br><strong>YA CUENTA CON EL ESQUEMA DE VACUNACION COMPLETO</strong> ";
+
+      closeModal.addEventListener('click', (e) => {
+        e.preventDefault();
+        modal.classList.remove('modal--show');
+      });
+
+      closeModal.addEventListener('click', () => {
+        window.location.assign('pacientes.html');
+      });
+     
       break;
   }
 };
@@ -181,10 +257,8 @@ function validarFormulario() {
           } else if (document.getElementById('campo7').value == '') {
             alert('El campo fecha esta vacio');
           }
-          else if (document.getElementById('campo8').value == '' || 0 ) {
+          else if (document.getElementById('campo8').value == ''  ) {
             alert('El campo edad esta vacio');
-          }else if (document.getElementById('campo9').value == 'Municipio de residencia') {
-            alert('El campo fecha esta vacio');
           }else if (document.getElementById('campo10').value == '') {
             alert('El campo direccion esta vacio');
           }
