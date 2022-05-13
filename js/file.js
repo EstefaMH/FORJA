@@ -100,10 +100,7 @@ function patients() {
         modal.classList.remove('modal--show');
       });
 
-      closeModal.addEventListener('click', () => {
-        window.location.assign('vacunacion.html');
-      });
-      
+    
       break;
 
     case 1007203506:
@@ -186,9 +183,7 @@ function patients_dash() {
         modal.classList.remove('modal--show');
       });
 
-      closeModal.addEventListener('click', () => {
-        window.location.assign('vacunacion.html');
-      });
+      
       
       break;
 
