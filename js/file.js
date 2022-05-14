@@ -17,13 +17,13 @@ function access() {
       modal.classList.remove('modal--show');
     });
   } else
-    if (user == 'Admin' && password == 'Kueppa2022') {
+    if (user == 'Admin' && password == 'Kuepa2022') {
       document.querySelector('.ingresar').setAttribute('type', 'submit');
       //document.querySelector('.ingresar').addEventListener('submit', () => {  
       document.querySelector('#loginn').setAttribute('action', 'dashboard.html');
       //});
     } else
-      if (user != 'Admin' || password != 'Kueppa2022') {
+      if (user != 'Admin' || password != 'Kuepa2022') {
         // const openModal = document.querySelector('.hero__cta');
         user.value = " ";
         password.value = " ";
@@ -274,6 +274,16 @@ function validarFormulario() {
 function validarCadenasString(str) {
   let myRe = new RegExp('[a-z]+');
   let myArray = myRe.test(str);
+
+  return myArray;
+};
+
+
+
+
+function validarNumeros(int) {
+  let myRe = new RegExp('^[0-9]*$');
+  let myArray = myRe.test(int);
 
   return myArray;
 };
