@@ -232,38 +232,67 @@ function validarFormulario() {
 
   if (document.getElementById('campo1').value === "") {
     alert('el campo fecha esta vacio');
+    document.getElementById('campo1').focus();
   } else
     if (document.getElementById('campo2').value === "") {
       alert('el campo N de registro esta vacio');
+      document.getElementById('campo2').focus();
     } else if (validarNumeros(parseInt(document.getElementById('campo2').value)) == false){
-      alert('El campo nombre debe contener datos numericos');
+      alert('El campo N de registro debe contener datos numericos');
       document.getElementById('campo2').value = "";
+      document.getElementById('campo2').focus();
     }else
       if (document.getElementById('campo3').value === "") {
         alert('el campo nombre esta vacio');
+        document.getElementById('campo3').focus();
       } else if (validarCadenasString(document.getElementById('campo3').value) == false) {
         alert('El campo nombre debe contener letras (a-z)');
+        document.getElementById('campo3').focus();
         document.getElementById('campo3').value = "";
       } else if (document.getElementById('campo4').value === "") {
         alert('el campo apellidos esta vacio');
       } else
+      if (validarCadenasString(document.getElementById('campo4').value) == false) {
+        alert('El campo apellidos debe contener letras (a-z)');
+      document.getElementById('campo4').focus();
+      document.getElementById('campo4').value = "";
+      } else
         if (document.getElementById('campo5').value === "") {
           alert('el campo numero de identificacion esta vacio');
+        } else if (validarNumeros(parseInt(document.getElementById('campo5').value)) == false) {
+          alert('El campo numero de identificacion debe contener datos numericos');
+        document.getElementById('campo5').focus();
+        document.getElementById('campo5').value = "";
         } else
           if (document.getElementById('campo6').value == 'Tipo de documento') {
             alert('No ha seleccionado ninguna opcion');
+            document.getElementById('campo6').focus();
+
           } else if (document.getElementById('campo7').value == '') {
             alert('El campo fecha esta vacio');
+            document.getElementById('campo7').focus();
           }
-          else if (document.getElementById('campo8').value == ''  ) {
+          else if (document.getElementById('campo8').value == '' ) {
             alert('El campo edad esta vacio');
+            document.getElementById('campo8').focus();
+          }else if (validarNumeros(parseInt(document.getElementById('campo8').value)) == false) {
+            alert('El campo edad debe contener datos numericos');
+            document.getElementById('campo8').focus();
+            document.getElementById('campo8').value = "";
           }else if (document.getElementById('campo10').value == '') {
             alert('El campo direccion esta vacio');
+            document.getElementById('campo10').focus();
           }
           else if (document.getElementById('campo11').value == '') {
-            alert('correo incorrecto ');
+            alert('El campo correo esta vacio');
+            document.getElementById('campo11').focus();
           } else if (document.getElementById('campo12').value == '') {
             alert('El campo celular esta vacio');
+            document.getElementById('campo12').focus();
+          } else if ((document.getElementById('campo12').value).length != 10 && validarNumeros(parseInt(document.getElementById('campo12').value)) == false ) {
+            alert('El campo celular debe contener datos numericos');
+            document.getElementById('campo12').focus();
+            document.getElementById('campo12').value = "";
           }else {
             console.log("todo fue un exito");
             validar = true;
