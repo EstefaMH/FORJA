@@ -235,8 +235,10 @@ function validarFormulario() {
   } else
     if (document.getElementById('campo2').value === "") {
       alert('el campo N de registro esta vacio');
-    } else
-
+    } else if (validarNumeros(parseInt(document.getElementById('campo2').value)) == false){
+      alert('El campo nombre debe contener datos numericos');
+      document.getElementById('campo2').value = "";
+    }else
       if (document.getElementById('campo3').value === "") {
         alert('el campo nombre esta vacio');
       } else if (validarCadenasString(document.getElementById('campo3').value) == false) {
@@ -277,7 +279,6 @@ function validarCadenasString(str) {
 
   return myArray;
 };
-
 
 
 
