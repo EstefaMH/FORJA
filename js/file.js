@@ -130,7 +130,7 @@ function patients_dash() {
 
   switch (doc) {
 
-    case 523687955:
+    case 52368795:
       console.log("entr");
       //document.getElementById('search').addEventListener('mouseup', () => {
       //alert("Ya cuenta con la primera dosis\nVACUNA : Pfizer\nFECHA: 20/05/2021");
